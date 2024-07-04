@@ -1,0 +1,181 @@
+/* 
+font: Spoqa Han Sans Neo
+기본폰트크기 : 16px
+기본폰트색상 : background: #000;
+기본배경색상 : background: #fff;
+기본줄간격 : 20.03px
+전체컨테이너 : width:100%
+컨텐츠영역 : width:1280px */
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  font-family: 'SpoqaHanSansNeo', sans-serif, Verdana;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  line-height: 20.03px;
+  height: 100vh;
+  /* position: relative; */
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+header {
+  border: 3px solid maroon;
+  width: 1280px;
+  /* position: absolute; */
+  background: rgba(242, 233, 216, 1);
+}
+
+nav {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+  top: 2px;
+  background: rgba(242, 233, 216, 1);
+}
+header nav .logo img {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  top: 31px;
+  /* left: 320px; */
+}
+header > nav .nav-link a:nth-child(1),
+header > nav .nav-link a:nth-child(2) {
+  margin-right: 30px;
+  width: 46px;
+  height: 20px;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+  color: #000;
+}
+header > nav .nav-link a:nth-child(3) {
+  margin-right: 40px;
+  width: 62px;
+  height: 20px;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+  color: #000;
+}
+header > nav .nav-link button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'SpoqaHanSansNeo';
+  font-weight: 700;
+  cursor: pointer;
+  top: 26px;
+  left: 1460px;
+  border-radius: 40px;
+  text-align: center;
+  background-color: rgba(217, 118, 82, 1);
+}
+
+/* Section : intro */
+
+main {
+  width: 1280px;
+}
+main .intro {
+  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background: rgba(242, 233, 216, 1);
+}
+main section .heading {
+  width: 100%;
+  height: 798px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* justify-content: space-between; */
+  justify-content: center;
+  position: relative;
+}
+
+.heading > h1 {
+  /* position: absolute; */
+  width: 737px;
+  height: 120px;
+  top: 304px;
+  left: 320px;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60.1px;
+  /* text-align: left; */
+  color: #000;
+}
+.heading p {
+  /* position: absolute; */
+  width: 439px;
+  height: 86px;
+  top: 464px;
+  left: 320px;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.03px;
+  text-align: left;
+  color: #000;
+}
+.heading button {
+  /* position: absolute; */
+  width: 140px;
+  height: 50px;
+  border: none;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  top: 590px;
+  left: 320px;
+  border-radius: 40px;
+  background: rgba(217, 118, 82, 1);
+}
+.heading img {
+  position: absolute;
+  width: 415px;
+  height: 766px;
+  top: 136px;
+  left: 865px;
+}
+main .about {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 798px;
+  background: rgba(255, 255, 255, 1);
+}
+
