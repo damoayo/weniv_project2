@@ -176,3 +176,11 @@ main .about {
   height: 798px;
   background: rgba(255, 255, 255, 1);
 }
+
+main .about {
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flexbox;
+}
