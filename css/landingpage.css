@@ -43,7 +43,6 @@ header {
   /* position: absolute; */
   background: rgba(242, 233, 216, 1);
 }
-
 nav {
   width: inherit;
   display: flex;
@@ -171,7 +170,6 @@ main section .heading {
   left: 865px;
 }
 main .about {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
