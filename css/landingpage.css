@@ -408,7 +408,7 @@ article .support .watch .learn-more button {
   top: 2422px;
   left: 320px;
 }
-.subscribe form input[type=text]{
+.subscribe form input[type='text'] {
   width: 530px;
   height: 60px;
   top: 70px;
@@ -420,7 +420,7 @@ article .support .watch .learn-more button {
   border-radius: 60px;
   background: #fff url(../img/mail.svg) no-repeat center left 30px;
 }
-.subscribe form input[type=submit]{
+.subscribe form input[type='submit'] {
   width: 136px;
   height: 50px;
   top: 75px;
@@ -438,60 +438,8 @@ article .support .watch .learn-more button {
   line-height: 20.03px;
 }
 
+/* 고양이 사진 */
 
-/* 
-#subscribe_form {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  height: 200px;
-  top: 2422px;
-  left: 320px;
-}
-#subscribe_form .formWrap {
-  border-radius: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-}
-.subscribe form label input {
-  width: 530px;
-  height: 60px;
-  top: 70px;
-  left: 692px;
-  border: none;
-  border-radius: 60px;
-  background: #fff url(../img/mail.svg) no-repeat center left 30px;
-}
-.subscribe form label input::placeholder {
-  width: 330px;
-  height: 20px;
-  top: 90px;
-  left: 880px;
-  border: none;
-  font-family: 'SpoqaHanSansNeo';
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 20.03px;
-  text-align: center;
-  color: rgba(118, 118, 118, 1);
-}
-#open_modal {
-  width: 136px;
-  height: 50px;
-  top: 75px;
-  cursor: pointer;
-  border: none;
-  border-radius: 40px;
-  margin-right: 5px;
-  box-sizing: border-box;
-  background: rgba(217, 118, 82, 1);
-  color: #fff;
-  font-family: 'SpoqaHanSansNeo';
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20.03px;
-} */
 .bg-cat {
   width: 100vw;
   height: 340px;
@@ -504,13 +452,16 @@ article .support .watch .learn-more button {
   margin-left: -32px;
   z-index: 0;
 }
-#scrollTop{
+
+/* scroll top */
+
+.scrollTop {
   width: 1280px;
   margin: auto;
   display: flex;
   justify-content: right;
 }
-#scrollTop img{
+.scrollTop img {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -521,19 +472,17 @@ article .support .watch .learn-more button {
   opacity: 0.8;
   z-index: 100;
 }
-#scrollTop img:hover{
+.scrollTop img:hover {
   position: absolute;
   width: 40px;
   height: 40px;
   top: 2730px;
   border-radius: 50%;
-  /* background-image: url(../img/scroll-top-1.png); */
   opacity: 1;
 }
-#scrollTop img:active{
 
-}
 /* 푸터 */
+
 footer {
   width: 100vw;
   height: 160px;
