@@ -18,14 +18,13 @@
             <img src="./img/logo.png" alt="" />
           </div>
           <div class="nav-link">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Support</a>
+            <a href="#none">Home</a>
+            <a href="#none">About</a>
+            <a href="#none">Support</a>
             <button>Download</button>
           </div>
         </nav>
       </header>
-
       <main>
         <section class="intro">
           <div class="heading">
@@ -54,7 +53,6 @@
               </div>
             </div>
           </section>
-
           <section class="support">
             <div class="watch">
               <h2>dummy text of the printing and dummy</h2>
@@ -77,8 +75,7 @@
               </div>
             </div>
           </section>
-
-          <section class="download">
+          <section class="subEmail">
             <div class="subscribe">
               <div class="blog-post">
                 <h2>Subscribe to our Blog post</h2>
@@ -87,14 +84,23 @@
                   Lorem Ipsum has been the industry's standard dummy text
                 </p>
               </div>
-              <div class="email-btn">
-                <input type="email" />
-                <button>Subscribe</button>
-              </div>
+
+              <form id="subscribe_form" method="post">
+                <div class="formWrap">
+                  <label class="input_email" for="inputEmail">
+                    <input type="email" name="email" id="inputEmail" placeholder="Enter your e-mail address" required />
+                  </label>
+                  <button
+                    id="open_modal"
+                    
+                    type="submit"
+                    class="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="bigCat">
-              <img src="./img/img_5.jpg" alt="고양이 확대 사진"/>
-            </div>
+            <div class="bg-cat"></div>
           </section>
         </article>
 
@@ -105,14 +111,30 @@
           <span></span>
         </aside>
       </main>
+
+      <!-- footer -->
+
       <footer>
-        <div class="logo"><img src="" alt="" /></div>
-        <nav>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </nav>
+        <div class="wrapper">
+          <div class="footer_pc">
+            <a href="/" class="logo">
+              <img src="./img/logo.svg" alt="호두" />
+            </a>
+            <div class="sns">
+              <a href="#"><img src="./img/blog.svg" alt="블로그" /></a>
+              <a href="#"><img src="./img/instagram.svg" alt="인스타그램" /></a>
+              <a href="#"> <img src="./img/facebook.svg" alt="페이스북" /></a>
+              <a href="#"> <img src="./img/youtube.svg" alt="유튜브" /></a>
+            </div>
+          </div>
+          <!-- 모바일 푸터메뉴 -->
+          <div class="footer_mobile">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Support</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
