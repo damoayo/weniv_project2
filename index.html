@@ -14,7 +14,7 @@
     <div class="container">
       <header>
         <nav>
-          <div class="logo">
+          <div class="logo" id="logo">
             <img src="./img/logo.png" alt="" />
           </div>
           <div class="nav-link">
@@ -85,22 +85,24 @@
                 </p>
               </div>
 
-              <form id="subscribe_form" method="post">
+              <!-- <form id="subscribe_form" method="post">
                 <div class="formWrap">
                   <label class="input_email" for="inputEmail">
                     <input type="email" name="email" id="inputEmail" placeholder="Enter your e-mail address" required />
                   </label>
-                  <button
-                    id="open_modal"
-                    
-                    type="submit"
-                    class="button">
-                    Subscribe
-                  </button>
+                  <button id="open_modal" type="submit" class="button">Subscribe</button>
                 </div>
+              </form> -->
+
+              <form class="subscribe_form" method="post">
+                <input type="text" name="email" placeholder="Enter your e-mail address" required />
+                <input type="submit" value="Subscribe" class="btnEmail" />
               </form>
             </div>
             <div class="bg-cat"></div>
+            <div id="scrollTop">
+              <a href="#logo"><img src="./img/top-btn.svg" alt="up" /></a>
+            </div>
           </section>
         </article>
 
@@ -137,5 +139,24 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.querySelector('.subscribe_form').addEventListener('submit', function (e) {
+        e.preventDefault(); // 기본 폼 제출 막기
+        const email = document.querySelector('.subscribe_form input[name="email"]');
+        const modal = document.querySelector('.modal');
+
+        // email.checkValidity()로 검사하니 일반텍스트 오류
+        // 정규식으로 email패턴 유효검사
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // 이메일 유효성 검사
+        if (emailPattern.test(email.value)) {
+          modal.classList.add('on'); // 모달 열기
+        } else {
+          alert('유효한 이메일 주소를 기입해 주세요!');
+        }
+      });
+    </script>
   </body>
 </html>

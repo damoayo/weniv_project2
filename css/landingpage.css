@@ -207,9 +207,9 @@ article .about .cat-one img {
   width: 660px;
   height: 390px;
   top: 1060px;
-  /* left: 320px; */
   border-radius: 30px;
   box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  background-attachment: fixed;
 }
 
 article .about .cat-one h2 {
@@ -397,6 +397,49 @@ article .support .watch .learn-more button {
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
+
+/* form부분 */
+
+.subscribe form {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 200px;
+  top: 2422px;
+  left: 320px;
+}
+.subscribe form input[type=text]{
+  width: 530px;
+  height: 60px;
+  top: 70px;
+  left: 692px;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 60px;
+  background: #fff url(../img/mail.svg) no-repeat center left 30px;
+}
+.subscribe form input[type=submit]{
+  width: 136px;
+  height: 50px;
+  top: 75px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-left: -141px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  background: rgba(217, 118, 82, 1);
+  color: #fff;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.03px;
+}
+
+
+/* 
 #subscribe_form {
   display: flex;
   align-items: center;
@@ -404,7 +447,6 @@ article .support .watch .learn-more button {
   height: 200px;
   top: 2422px;
   left: 320px;
-  
 }
 #subscribe_form .formWrap {
   border-radius: 60px;
@@ -449,7 +491,7 @@ article .support .watch .learn-more button {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.03px;
-}
+} */
 .bg-cat {
   width: 100vw;
   height: 340px;
@@ -462,9 +504,35 @@ article .support .watch .learn-more button {
   margin-left: -32px;
   z-index: 0;
 }
+#scrollTop{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+}
+#scrollTop img{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 2730px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 100;
+}
+#scrollTop img:hover{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 2730px;
+  border-radius: 50%;
+  /* background-image: url(../img/scroll-top-1.png); */
+  opacity: 1;
+}
+#scrollTop img:active{
 
-/* form부분 */
-
+}
 /* 푸터 */
 footer {
   width: 100vw;
@@ -484,7 +552,6 @@ footer > div > div.footer_pc {
   background-color: #fff;
   top: 2868px;
 }
-
 .sns {
   display: flex;
   gap: 20px;
