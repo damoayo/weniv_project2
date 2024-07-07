@@ -20,7 +20,7 @@ body {
   margin: 0;
   line-height: 20.03px;
   height: 100vh;
-  /* position: relative; */
+  display: flex;
 }
 a {
   text-decoration: none;
@@ -39,7 +39,6 @@ a {
   position: relative;
 }
 header {
-  /* border: 3px solid maroon; */
   width: 100vw;
   background: rgba(242, 233, 216, 1);
 }
@@ -49,7 +48,6 @@ nav {
   display: flex;
   align-items: center;
   height: 102px;
-  top: 2px;
   background: rgba(242, 233, 216, 1);
 }
 header nav .logo {
@@ -64,28 +62,27 @@ header nav .logo img {
   height: 40px;
   top: 31px;
 }
-header > nav .nav-link a:nth-child(1),
-header > nav .nav-link a:nth-child(2) {
+
+header > nav .nav-link a {
   margin-right: 30px;
-  width: 46px;
-  height: 20px;
-  font-family: 'SpoqaHanSansNeo';
   font-size: 16px;
   font-weight: 400;
   line-height: 20.03px;
-  text-align: left;
   color: #000;
+}
+header > nav .nav-link a:nth-child(1),
+header > nav .nav-link a:nth-child(2) {
+  width: 46px;
+  height: 20px;
+  font-family: 'SpoqaHanSansNeo';
+  text-align: left;
 }
 header > nav .nav-link a:nth-child(3) {
   margin-right: 40px;
   width: 62px;
   height: 20px;
   font-family: 'SpoqaHanSansNeo';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.03px;
   text-align: left;
-  color: #000;
 }
 header > nav .nav-link button {
   width: 140px;
@@ -291,9 +288,9 @@ article .support .watch .wrap {
   margin: 90px 0;
 }
 
-.wrap > img:nth-child(1),
-.wrap > img:nth-child(2),
-.wrap > img:nth-child(3) {
+.wrap > a > img:nth-child(1),
+.wrap > a > img:nth-child(2),
+.wrap > a > img:nth-child(3) {
   width: 378px;
   height: 378px;
   top: 1800px;
@@ -479,6 +476,104 @@ article .support .watch .learn-more button {
   top: 2730px;
   border-radius: 50%;
   opacity: 1;
+}
+
+/* modal */
+
+#modal {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  width: 600px;
+  height: 400px;
+  top: -526px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#modal .modalContent {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/modal-bg-img.png) no-repeat;
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  animation: slidefade 0.45s linear;
+}
+#modal .modalContent img {
+  position: absolute;
+  width: 110px;
+  height: 112px;
+  top: 60px;
+  left: 245px;
+}
+#modal .modalContent h2 {
+  position: absolute;
+  width: 212px;
+  height: 46px;
+  top: 196px;
+  left: 194px;
+  font-family: 'SpoqaHanSansNeo';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45.07px;
+  text-align: center;
+  color: rgba(217, 118, 82, 1);
+}
+#modal .modalContent p {
+  position: absolute;
+  width: 383px;
+  height: 18px;
+  top: 254px;
+  left: 108px;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.53px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.btn-go {
+  position: absolute;
+  width: Hug (189px) px;
+  height: Hug (50px) px;
+  top: 310px;
+  left: 205px;
+  padding: 15px 29px 15px 29px;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 40px;
+  background: rgba(217, 118, 82, 1);
+}
+.btn-go span {
+  width: 131px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.03px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'SpoqaHanSansNeo';
+}
+@keyframes slidefade {
+  0% {
+    opacity: 0;
+    margin-top: -300px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 /* 푸터 */
